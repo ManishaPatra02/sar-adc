@@ -24,16 +24,15 @@ N 50 -180 50 -150 {lab=#net15}
 N 90 -180 90 -150 {lab=#net16}
 N 120 -160 120 -150 {lab=#net16}
 N 90 -160 120 -160 {lab=#net16}
-N -490 -390 -240 -390 {lab=#net17}
-N -490 -250 -240 -250 {lab=#net18}
+N -490 -390 -240 -390 {lab=Vin}
+N -490 -250 -240 -250 {lab=CTRL}
 N -580 -330 -580 -310 {lab=VDD}
 N -580 -160 -580 -130 {lab=gnd}
 N -580 -510 -580 -480 {lab=gnd}
-N -720 -440 -670 -440 {lab=#net19}
-N -720 -440 -720 -200 {lab=#net19}
-N -720 -200 -670 -200 {lab=#net19}
-N -790 -250 -670 -250 {lab=#net20}
-N -790 -390 -670 -390 {lab=#net21}
+N -720 -440 -670 -440 {lab=CTRL}
+N -720 -200 -670 -200 {lab=CTRL}
+N -790 -250 -670 -250 {lab=P_In}
+N -790 -390 -670 -390 {lab=N_In}
 N -190 20 -190 50 {lab=D8}
 N -150 20 -150 50 {lab=D7}
 N -110 20 -110 50 {lab=D6}
@@ -63,20 +62,20 @@ N -120 440 -120 460 {lab=D2}
 N -120 520 -120 540 {lab=gnd}
 N 150 440 150 460 {lab=Vref}
 N 150 520 150 540 {lab=gnd}
-N -550 50 -550 70 {lab=VDD}
-N -550 130 -550 150 {lab=gnd}
+N -420 40 -420 60 {lab=VDD}
+N -420 120 -420 140 {lab=gnd}
 N 1190 -330 1300 -330 {lab=Outn}
 N 1190 -350 1300 -350 {lab=Outp}
 N 1190 -310 1190 -260 {lab=GND}
 N 1190 -260 1190 -160 {lab=GND}
-N 870 -230 870 -80 {lab=#net22}
+N 870 -230 870 -80 {lab=#net17}
 N 720 -20 720 0 {lab=GND}
 N 720 0 870 0 {lab=GND}
 N 870 -20 870 0 {lab=GND}
 N 870 0 1190 0 {lab=GND}
 N 1190 -160 1190 0 {lab=GND}
-N 760 -50 830 -50 {lab=#net23}
-N 720 -100 720 -80 {lab=#net23}
+N 760 -50 830 -50 {lab=#net18}
+N 720 -100 720 -80 {lab=#net18}
 N 720 -50 720 -20 {lab=GND}
 N 870 -50 870 -20 {lab=GND}
 N 1270 -160 1270 0 {lab=GND}
@@ -90,26 +89,26 @@ N -910 120 -790 120 {lab=GND}
 N 640 -350 640 -320 {lab=Clkc}
 N 640 -350 890 -350 {lab=Clkc}
 N 500 -370 890 -370 {lab=Vinp}
-N -790 -250 -790 -200 {lab=#net20}
-N -910 -270 -910 -200 {lab=#net21}
+N -790 -250 -790 -200 {lab=P_In}
+N -910 -270 -910 -200 {lab=N_In}
 N 380 -390 890 -390 {lab=Vinn}
-N 1190 -390 1270 -390 {lab=#net24}
-N 1270 -390 1270 -220 {lab=#net24}
-N 720 -180 720 -160 {lab=#net24}
-N 820 -220 1270 -220 {lab=#net24}
-N 720 -220 820 -220 {lab=#net24}
-N 720 -220 720 -180 {lab=#net24}
-N 1190 -370 1230 -370 {lab=#net22}
-N 1230 -370 1230 -280 {lab=#net22}
-N 870 -280 1230 -280 {lab=#net22}
-N 870 -280 870 -230 {lab=#net22}
+N 1190 -390 1270 -390 {lab=#net19}
+N 1270 -390 1270 -220 {lab=#net19}
+N 720 -180 720 -160 {lab=#net19}
+N 820 -220 1270 -220 {lab=#net19}
+N 720 -220 820 -220 {lab=#net19}
+N 720 -220 720 -180 {lab=#net19}
+N 1190 -370 1230 -370 {lab=#net17}
+N 1230 -370 1230 -280 {lab=#net17}
+N 870 -280 1230 -280 {lab=#net17}
+N 870 -280 870 -230 {lab=#net17}
 N 340 -390 380 -390 {lab=Vinn}
 N 340 -250 500 -250 {lab=Vinp}
 N 500 -370 500 -250 {lab=Vinp}
-N 720 -90 770 -90 {lab=#net23}
-N 770 -90 770 -50 {lab=#net23}
-N -910 -390 -910 -270 {lab=#net21}
-N -910 -390 -790 -390 {lab=#net21}
+N 720 -90 770 -90 {lab=#net18}
+N 770 -90 770 -50 {lab=#net18}
+N -910 -390 -910 -270 {lab=N_In}
+N -910 -390 -790 -390 {lab=N_In}
 N -190 50 -190 80 {lab=D8}
 N -150 50 -150 80 {lab=D7}
 N -110 50 -110 80 {lab=D6}
@@ -148,6 +147,8 @@ N 1530 -270 1530 -240 {lab=GND}
 N 1620 -350 1620 -320 {lab=Com_out}
 N 1620 -260 1620 -250 {lab=GND}
 N 1530 -250 1620 -250 {lab=GND}
+N -750 40 -750 60 {lab=CTRL}
+N -750 120 -750 140 {lab=gnd}
 C {C_DAC.sym} -10 -430 2 1 {name=x1}
 C {C_DAC.sym} -10 -210 0 0 {name=x2}
 C {Switch_Array.sym} -200 -1030 0 0 {name=x3}
@@ -170,8 +171,8 @@ C {vsource.sym} -120 490 0 0 {name=V7 value="PULSE(0 1.8 0 1u 1u 20u 40u)" savec
 C {vsource.sym} 150 490 0 0 {name=V11 value=1.2 savecurrent=false}
 C {lab_wire.sym} -120 440 0 0 {name=p34 sig_type=std_logic lab=D2}
 C {lab_wire.sym} 150 440 0 0 {name=p35 sig_type=std_logic lab=Vref}
-C {vsource.sym} -550 100 0 0 {name=V9 value=1.8 savecurrent=false}
-C {lab_wire.sym} -550 50 0 1 {name=p26 sig_type=std_logic lab=VDD}
+C {vsource.sym} -420 90 0 0 {name=V9 value=1.8 savecurrent=false}
+C {lab_wire.sym} -420 40 0 1 {name=p26 sig_type=std_logic lab=VDD}
 C {vsource.sym} 1270 -190 0 0 {name=V8 value=1.8 savecurrent=false}
 C {vsource.sym} 640 -290 0 0 {name=V12 value="0 PULSE(0 1.8 0 1u 1u 20u 40u)" savecurrent=false}
 C {vsource.sym} -790 -170 0 0 {name=V13 value="sin(0.9 0.9 2k)" savecurrent=false}
@@ -230,14 +231,14 @@ value="
 .tran 1u 500u
 .control
 run
-plot v(vref)+4 v(D2)+6 v(D3)+8 v(D4)+10 v(D5)+12 v(D6)+14 v(D7)+16 v(D8)+18
+plot v(vref)+2 v(D2)+4 v(D3)+6 v(D4)+8 v(D5)+10 v(D6)+12 v(D7)+14 v(D8)+16 V(Vinp)+18 V(Vinn)+20
 plot V(Outp) V(Outn) V(Com_out)
-plot V(Vinp) V(Vinn)
+plot v(Vip) v(P_In)+2 v(Vin)+4 v(N_In)+6 v(CTRL)+8
 .endc
 .end
 "}
 C {lab_wire.sym} -580 -320 0 1 {name=p14 sig_type=std_logic lab=VDD}
-C {gnd.sym} -550 150 0 0 {name=l1 lab=gnd}
+C {gnd.sym} -420 140 0 0 {name=l1 lab=gnd}
 C {gnd.sym} -580 -130 0 0 {name=l3 lab=gnd}
 C {gnd.sym} -580 -510 2 0 {name=l5 lab=gnd}
 C {gnd.sym} 200 -60 0 0 {name=l4 lab=gnd}
@@ -254,3 +255,12 @@ m=1
 value=20f
 footprint=1206
 device="ceramic capacitor"}
+C {lab_wire.sym} -720 -440 0 0 {name=p9 sig_type=std_logic lab=CTRL}
+C {lab_wire.sym} -720 -200 0 0 {name=p13 sig_type=std_logic lab=CTRL}
+C {vsource.sym} -750 90 0 0 {name=V10 value="PULSE(0 1.8 20n 20n 20n 10u 20u)" savecurrent=false}
+C {gnd.sym} -750 140 0 0 {name=l9 lab=gnd}
+C {lab_wire.sym} -750 40 0 0 {name=p20 sig_type=std_logic lab=CTRL}
+C {lab_wire.sym} -390 -390 0 0 {name=p22 sig_type=std_logic lab=Vin}
+C {lab_wire.sym} -390 -250 0 0 {name=p25 sig_type=std_logic lab=Vip}
+C {lab_wire.sym} -740 -250 0 0 {name=p27 sig_type=std_logic lab=P_In}
+C {lab_wire.sym} -790 -390 0 0 {name=p28 sig_type=std_logic lab=N_In}
